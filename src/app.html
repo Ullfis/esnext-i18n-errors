@@ -1,0 +1,38 @@
+<template>
+  <h1>${message}</h1>
+
+  <h3>Current language</h3>
+  <p>${selectedLanguage}</p>
+
+  <button click.delegate="toggleLanguage()">Toggle language</button>
+
+<div id="reportThis">
+
+<h3>foo-element1: t="[value]FirstName"</h3>
+<foo-element1 t="[value]FirstName" value="s"></foo-element1>
+
+<h3>foo-element2: t="[md-value]FirstName"</h3>
+<foo-element2 t="[md-value]FirstName" md-value="s"></foo-element2>
+
+<h3>foo-element2: md-value.two-way="i18n.tr('FirstName')"</h3>
+<foo-element2 md-value.two-way="i18n.tr('FirstName')"></foo-element2>
+
+<h3>foo-element3: t="[md-value]FirstName"</h3>
+<foo-element3 t="[md-value]FirstName" md-value="s"></foo-element3>
+
+<h3>foo-element4: t="[foovalue]FirstName"</h3>
+<foo-element4 t="[foovalue]FirstName"></foo-element4>
+
+</div>
+
+  <h3>t="FirstName"</h3>
+  <p t="FirstName"></p>
+
+  <hr/>
+  
+  <pre>
+    <code id="report">${reportText}
+
+    </code>
+  </pre>
+</template>
